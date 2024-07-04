@@ -3,6 +3,20 @@
   /* SIZE */
   font-family: "IBM Plex Sans", sans-serif, monospace;
 
+  /* COLOR PINK */
+  --pink-lavender-50: #FFF4FE;
+  --pink-lavender-100: #FEE9FC;
+  --pink-lavender-200: #FDD1FA;
+  --pink-lavender-300: #FAADF0;
+  --pink-lavender-400: #F679E5;
+  --pink-lavender-500: #EB4AD5;
+  --pink-lavender-600: #CF2AB5;
+  --pink-lavender-700: #AC1F93;
+  --pink-lavender-800: #8C1C76;
+  --pink-lavender-900: #731C61;
+  --pink-lavender-950: #4C063C;
+
+  /* COLOR GREEN */
   --green-atlantis-50:   #F5FEE7;
   --green-atlantis-100:   #E8FCCB;
   --green-atlantis-200:   #D1FA9C;
@@ -32,32 +46,74 @@
 
 .link__underline {
   /* transition-colors duration-100 text-atlantis-500 no-underline relative link__underline */
-  color: var(--green-atlantis-500);
+  color: black;
   text-decoration: none;
   position: relative;
 }
 
+.link__underline:hover {
+ /* box-shadow: 0 0 2px 7px rgba(0,0,0,0.1); */
+}
+
 .link__underline::after {
   content: '';
-  background-color: var(--purple-heart-300);
   display: block;
   height: .1rem;
   width: 100%;
   position: absolute;
   bottom: -.1rem;
   z-index: -1;
-  transition: all .1s;
+  transition: all .2s;
 }
 
-.link__underline:hover {
-  color: var(--purple-heart-800);
+.link__underline--purple:hover {
+  color: white;
+}
+
+.link__underline--purple::after {
+  background-color: var(--purple-heart-500);
+}
+
+.link__underline--purple:hover::after {
+  background-color: var(--purple-heart-500);
+}
+
+.link__underline--pink:hover {
+  color: white;
+}
+
+.link__underline--pink::after {
+  background-color: var(--pink-lavender-500);
+}
+
+.link__underline--pink:hover::after {
+  background-color: var(--pink-lavender-500);
+}
+
+.link__underline--green:hover {
+  color: white;
+}
+
+.link__underline--green::after {
+  background-color: var(--green-atlantis-500);
+}
+
+.link__underline--green:hover::after {
+  background-color: var(--green-atlantis-500);
 }
 
 .link__underline:hover::after {
-  background-color: var(--green-atlantis-200);
-  height: calc(100% + .1rem);
-  width: calc(100% + .5rem);
+  height: calc(200%);
+  width: calc(100% + .7rem);
   transform: translateX(-.25rem) skew(-7.77deg);
+}
+
+.from-atlantis-400 {
+  background-image: linear-gradient(to top, var(--green-atlantis-400), var(--purple-heart-400));
+}
+
+.to-heart-500 {
+  background-image: linear-gradient(to top, var(--green-atlantis-400), var(--purple-heart-400));
 }
 
 .text-atlantis-50 {

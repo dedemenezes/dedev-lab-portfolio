@@ -11,26 +11,27 @@
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="bg-white text-black">
   <header class="relative h-screen flex flex-col items-center justify-center">
-    <nav class="px-4 flex items-center justify-between w-full absolute top-0 bg-transparent">
-      <a class="px-4 py-2 focus:ring-2 focus:ring-indigo-300" href="#">
+    <nav class="container h-16 flex items-center justify-between w-full absolute top-0 bg-transparent z-10">
+      <a class="focus:ring-2 focus:ring-indigo-300" href="#">
         <img src="https://placehold.co/40" class="flex-none" width="40" alt="logo image">
       </a>
-      <ul class="flex-none flex gap-4">
-        <li>
-          <a class="link__underline" href="./components.html">Components</a>
+      <ul class="flex-none flex gap-4 h-full flex items-center">
+        <li class="flex items-center h-full">
+          <a class="link__underline link__underline--purple font-bold tracking-wide" href="./components.html">Components</a>
         </li>
-        <li>
-          <a class="focus:ring-2 focus:ring-indigo-300" href="#">Projects</a>
+        <li class="flex items-center h-full">
+          <a class="link__underline link__underline--green font-bold tracking-wide" href="#">Projects</a>
         </li>
-        <li>
-          <a class="focus:ring-2 focus:ring-indigo-300" href="#">Music</a>
+        <li class="flex items-center h-full">
+          <a class="link__underline link__underline--pink font-bold tracking-wide" href="#">Music</a>
         </li>
       </ul>
     </nav>
     <div class="h-full absolute t-0" id="particles-js"></div>
-    <h1 class="text-4xl font-bold tracking-tight text-purple-heart-700">I do code and make content <span>about it!</span></h1>
+    <h1 class="text-4xl font-bold tracking-tight z-10">Andre Menezes</h1>
+    <p class="text-transparent bg-gradient-to-r from-atlantis-400 to-heart-500 bg-clip-text font-bold text-lg">Fullstack Developer</p>
   </header>
 
 

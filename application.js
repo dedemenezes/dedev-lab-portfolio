@@ -133,31 +133,21 @@
 particlesJS("particles-js", {
   "particles": {
     "number": {
-      "value": 280,
-      "density": {
-        "enable": true,
-        "value_area": 800
-      }
+      "value": 80
     },
     "color": {
-      "value": [
-        "#6814C3",
-        "#386311"
-      ],
+      "value":
+      // [
+      //   "#386311",
+      //   "#6814C3",
+      // ],
       // "#FFFFFF"
+      "9B111E"
     },
     "shape": {
-      "type": "circle",
-      // ["circle", "triangle", "image"],
-      "stroke": {
-        "width": 2,
-        "color": "#ffffff"
-      },
-      "polygon": {
-        "nb_sides": 8
-      },
+      "type": ["", "image"],
       "image": {
-        "src": "img/flamengo-15.svg",
+        "src": "img/ruby_logo_198.svg",
         "width": 100,
         "height": 100
       }
@@ -173,25 +163,27 @@ particlesJS("particles-js", {
       }
     },
     "size": {
-      "value": 3,
-      "random": true,
+      "value": 8,
+      "random": false,
       "anim": {
         "enable": false,
         "speed": 40,
-        "size_min": 0.1,
+        "size_min": 1,
         "sync": false
       }
     },
     "line_linked": {
       "enable": true,
-      "distance": 150,
-      "color":"#C7AFFF",
+      "distance": 200,
+      // "color":"#58A40C",
+      // "color":"#6814C3",
+      "color":"#9B111E",
       "opacity": 0.4,
-      "width": 1
+      "width": 2
     },
     "move": {
       "enable": true,
-      "speed": 6,
+      "speed": 3,
       "direction": "none",
       "random": false,
       "straight": false,
@@ -209,7 +201,7 @@ particlesJS("particles-js", {
     "events": {
       "onhover": {
         "enable": true,
-        "mode": "grab"
+        "mode": "repulse"
       },
       "onclick": {
         "enable": true,
@@ -225,14 +217,14 @@ particlesJS("particles-js", {
         }
       },
       "bubble": {
-        "distance": 400,
-        "size": 40,
+        "distance": 200,
+        "size": 20,
         "duration": 2,
         "opacity": 8,
         "speed": 3
       },
       "repulse": {
-        "distance": 200,
+        "distance": 100,
         "duration": 0.4
       },
       "push": {
