@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio Dedev</title>
+  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="relative h-screen flex flex-col items-center justify-center">
+    <nav class="px-4 flex items-center justify-between w-full absolute top-0 bg-transparent">
+      <a class="px-4 py-2 focus:ring-2 focus:ring-indigo-300" href="#">
+        <img src="https://placehold.co/40" class="flex-none" width="40" alt="logo image">
+      </a>
+      <ul class="flex-none flex gap-4">
+        <li>
+          <a class="link__underline" href="./components.html">Components</a>
+        </li>
+        <li>
+          <a class="focus:ring-2 focus:ring-indigo-300" href="#">Projects</a>
+        </li>
+        <li>
+          <a class="focus:ring-2 focus:ring-indigo-300" href="#">Music</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="h-full absolute t-0" id="particles-js"></div>
+    <h1 class="text-4xl font-bold tracking-tight text-purple-heart-700">I do code and make content <span>about it!</span></h1>
+  </header>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/stats.js@0.17.0/build/stats.min.js"></script>
+  <script src="application.js"></script>
+</body>
+</html>
