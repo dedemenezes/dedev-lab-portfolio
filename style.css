@@ -2,7 +2,7 @@
 
   /* SIZE */
   font-family: "IBM Plex Sans", sans-serif, monospace;
-
+  color: #001011;
   /* COLOR PINK */
   --pink-lavender-50: #FFF4FE;
   --pink-lavender-100: #FEE9FC;
@@ -53,6 +53,7 @@
 
 .link__underline:hover {
  /* box-shadow: 0 0 2px 7px rgba(0,0,0,0.1); */
+ transition: all .3s;
 }
 
 .link__underline::after {
