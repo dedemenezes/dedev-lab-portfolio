@@ -147,7 +147,7 @@ particlesJS("particles-js", {
     "shape": {
       "type": ["", "image"],
       "image": {
-        "src": "img/ruby_logo_198.svg",
+        "src": "img/ruby_logo.svg",
         "width": 100,
         "height": 100
       }
@@ -200,8 +200,8 @@ particlesJS("particles-js", {
     "detect_on": "canvas",
     "events": {
       "onhover": {
-        "enable": false,
-        "mode": "repulse"
+        "enable": true,
+        "mode": "bubble"
       },
       "onclick": {
         "enable": true,
@@ -258,3 +258,23 @@ particlesJS("particles-js", {
 //   requestAnimationFrame(update);
 // };
 // requestAnimationFrame(update);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// SORTABLE
+
+
+var el = document.getElementById('items');
+var sortable = Sortable.create(el);
+console.log(sortable);

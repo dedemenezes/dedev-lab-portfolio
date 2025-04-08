@@ -4,20 +4,20 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfolio Dedev</title>
-  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+  <!-- <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet"> -->
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
-<body class="bg-white text-black">
-  <header class="relative h-screen flex flex-col items-center justify-center">
-    <nav class="container h-16 flex items-center justify-between w-full absolute top-0 bg-transparent z-10">
-      <a class="focus:ring-2 focus:ring-indigo-300" href="#">
-        <img src="https://placehold.co/40" class="flex-none" width="40" alt="logo image">
+<body class="">
+  <header class="container__landing">
+    <nav class="navbar__main">
+      <a class="display-flex" href="#">
+        <img src="https://placehold.co/80" class="flex-none" width="40px" alt="logo image">
       </a>
-      <ul class="flex-none flex gap-4 h-full flex items-center">
+      <ul class="nav__menu">
         <li class="flex items-center h-full">
           <a class="link__underline link__underline--purple font-bold tracking-wide" href="./components.html">About</a>
         </li>
@@ -29,8 +29,9 @@
         </li>
       </ul>
     </nav>
-    <div class="h-full absolute t-0" id="particles-js"></div>
+    <div class="landing__absolute" id="particles-js"></div>
     <h1 class="text-4xl font-bold tracking-tight z-10">Andre Menezes</h1>
+    <img src="img/profile.jpg" style="z-index: 11;border-radius: 50%;" width="150px" alt="Profile picture">
     <p class="text-transparent bg-gradient-to-r from-atlantis-400 to-heart-500 bg-clip-text font-bold text-lg">Fullstack Developer</p>
   </header>
 
